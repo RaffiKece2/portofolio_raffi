@@ -4,8 +4,8 @@
 🤖 Robotik dan komputer visual
 
 ### 🛠 Tech Stack
--Python
--OpenCV
--MediaPipe
--Arduino
--Blender
+- Python
+- OpenCV
+- MediaPipe
+- Arduino
+- Blender
