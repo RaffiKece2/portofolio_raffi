@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+  
+}
+
+.gambar {
+    position: absolute;
+    width: 900px;
+    border-radius: 20px;
+    left: 40px;
+}
+.rivew {
+    position: relative;
+    background-color: rgb(0, 136, 136);
+    width: 220px;
+    height: 350px;
+    left: 990px;
+    top: 100px;
+    margin: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 12px 3px  rgb(99, 99, 99);
+
+}
+
+.teks1 {
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    left: 65px;
+    top: 2px;
+
+}
+
+.star {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    left: 25px;
+    top: 65px;
+
+
+}
+
+.bintang1 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: 0.2s ease-out;
+}
+
+.bintang1.active {
+    color: yellow;
+    transition: 0.2s ease;
+}
+
+
+.rivew .teks2 {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    font-size: 65px;
+    left: 48px;
+    top: 55px;
+}
+
+.rivew .teks3 {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    left: 70px;
+    top: 214px;
+    
+    
+}
+
+.bintang1:hover {
+    color: yellow;
+    text-shadow:  1px 1px 12px 3px orange;
+    transition: 0.2s ease-in;
+}
+
+.kotak {
+    position: absolute;
+    background-color: rgb(75, 70, 70);
+    width: 1200px;
+    height: 3px;
+    top: 535px;
+    left: 50px;
+}
+
+
+.isi {
+    position: relative;
+
+}
+
+.teks4 {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    top: 540px;
+    left: 50px;
+}
+
+.teks5 {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    max-width: 900px;
+    top: 630px;
+    left: 50px;
+}
+
+.harga1 {
+    position: absolute;
+    top: 800px;
+    left: 50px;
+    background-color: rgb(0, 187, 187);
+    width: 150px;
+    height: 40px;
+    transition: 0.3s ease-out;
+}
+
+.harga1:hover {
+    box-shadow: 0 0 12px 3px  rgb(99, 99, 99);
+    transition: 0.3s ease-in;
+}
+
+.teks6 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    left: 10px;
+    top: 1px;
+}
+
+.kosong {
+    background-color: black;
+    height: 100px;
+    width: 1px;
+}
+
+.gambar1 {
+    position: absolute;
+    width: 900px;
+    border-radius: 20px;
+    left: 40px;
+    height: 500px;
+
+}

@@ -1,0 +1,422 @@
+
+
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+.bar {
+    background-color: aqua;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: 0 0 14px 3px rgb(0, 159, 187);
+    padding: 10px;
+}
+
+.teks1 {
+    position: absolute;
+    font-size: 30px;
+    right: 25px;
+    color: black;
+    font-weight: bold;
+    top: 10px;
+}
+
+
+.a {
+    width: 40px;
+    height: 3px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1px;
+    margin: 10px;
+    border: none;
+}
+
+.list {
+    position: absolute;
+    background: none;
+    border: none;   
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    top: 17px;
+}
+
+.list:hover {
+    background-color: rgb(148, 143, 143);
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+
+#navbar {
+    position: absolute;
+    background-color: rgb(0, 87, 87);
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 2px rgb(109, 152, 187);
+    z-index: 10;
+    
+
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 28px 0 ;
+    color: wheat;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    width: 155px;
+    left: 0.1px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+    transition: 0.2s ease-in;
+    padding: 10px;
+
+}
+
+
+.btn:hover {
+    background-color: rgb(179, 224, 224);
+    transition: 0.2s ease-out;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+
+.fill {
+    position: relative;
+    top: 20px;
+}
+
+.teks2 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 20px;
+}
+
+.kotak {
+    position: absolute;
+    background-color: rgb(65, 65, 65);
+    width: 1290px;
+    height: 3px;
+    left: 20px;
+    top: 50px;
+}
+
+.game {
+    position: absolute;
+    background-color: rgb(22, 40, 44);
+    width: 1290px;
+    height: 300px;
+    left: 20px;
+    top: 65px;
+}
+
+.gambar {
+    position: absolute;
+    width: 190px;
+    height: 275px;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+
+.button {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 190px;
+    height: 275px;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 2px rgb(0, 134, 196);
+    transition: 0.2s ease-out;
+}
+
+.coba {
+    position: relative;
+    display: inline-block;
+    bottom:  18px;
+}
+
+.teks3 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    top: 15px;
+    left: 20px;
+    transform: translateX(0);
+    transition: 0.2s ease-out;
+
+}
+
+.btn2 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    top: 255px;
+    transform: translateX(0);
+    transition: 0.2 ease-out;
+    border: none;
+    border-radius: 10px;
+    left: 80px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+.coba:hover .teks3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(10px);
+    transition: 0.2s ease-in;
+}
+
+.coba:hover .btn2 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-10px);
+    transition: 0.2s ease-out;
+
+}
+
+.coba1 {
+    position: relative;
+    display: inline-block;
+    bottom:  18px;
+}
+
+
+.gambar1 {
+    position: absolute;
+    width: 190px;
+    height: 275px;
+    top: 10px;
+    left: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+
+
+.button1 {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 190px;
+    height: 275px;
+    top: 10px;
+    left: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+
+}
+
+.button1:hover {
+    box-shadow: 0 0 10px 2px rgb(0, 134, 196);
+    transition: 0.2s ease-in;
+}
+
+.teks4 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    top: 5%;
+    left: 250px;
+    transform: translateX(0);
+    transition: 0.2s ease-out;
+
+}
+
+.btn3 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    top: 240px;
+    transform: translateX(0);
+    transition: 0.2 ease-out;
+    border: none;
+    border-radius: 10px;
+    left: 300px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: black;
+}
+
+.coba1:hover .teks4 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(10px);
+    transition: 0.2s ease-in;
+}
+
+.coba1:hover .btn3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-10px);
+    transition: 0.2s ease-out;
+
+}
+
+
+
+.coba2 {
+    position: relative;
+    display: inline-block;
+    bottom:  18px;
+}
+
+
+.gambar2 {
+    position: absolute;
+    width: 190px;
+    height: 275px;
+    top: 10px;
+    left: 480px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+
+
+.button2 {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 190px;
+    height: 275px;
+    top: 10px;
+    left: 480px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+
+}
+
+.button2:hover {
+    box-shadow: 0 0 10px 2px rgb(0, 134, 196);
+    transition: 0.2s ease-in;
+}
+
+.teks5 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    top: 5px;
+    left: 485px;
+    transform: translateX(0);
+    transition: 0.2s ease-out;
+
+}
+
+.btn4 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    top: 240px;
+    transform: translateX(0);
+    transition: 0.2 ease-out;
+    border: none;
+    border-radius: 10px;
+    left: 530px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.btn4:hover {
+    background-color: white;
+    color: black;
+}
+
+.coba2:hover .teks5 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(10px);
+    transition: 0.2s ease-in;
+}
+
+.coba2:hover .btn4 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-10px);
+    transition: 0.2s ease-out;
+
+}

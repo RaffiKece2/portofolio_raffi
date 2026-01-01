@@ -1,0 +1,1458 @@
+
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+}
+
+
+
+.bar {
+    background-color: aqua;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: 0 0 14px 3px rgb(0, 159, 187);
+    padding: 10px;
+}
+
+.teks1 {
+    position: absolute;
+    font-size: 30px;
+    right: 25px;
+    color: black;
+    font-weight: bold;
+    top: 10px;
+}
+
+
+.a {
+    width: 40px;
+    height: 3px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1px;
+    margin: 10px;
+    border: none;
+}
+
+.list {
+    position: absolute;
+    background: none;
+    border: none;   
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    top: 17px;
+}
+
+.list:hover {
+    background-color: rgb(148, 143, 143);
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+
+#navbar {
+    position: absolute;
+    background-color: rgb(0, 87, 87);
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 2px rgb(109, 152, 187);
+    z-index: 10;
+    
+
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 28px 0 ;
+    color: wheat;
+}
+
+.hidden {
+    display: none;
+
+}
+
+
+#pembesar {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 500px;
+    right: 50px;
+    height: 30px;
+    width: 220px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.1s ease-out;
+    transform: translateX(-10px);
+    z-index: 9999;
+    
+}
+
+#pembesar:hover {
+    box-shadow: 0 0 12px 3px rgb(3, 131, 131);
+}
+
+
+.input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 13px 3px rgb(0, 159, 187);
+}
+
+.kotak {
+    position: relative;
+    background-color: rgb(65, 65, 65);
+    height: 3px;
+    border-radius: 10px;
+    top: 120px;
+}
+
+
+.scroll1 {
+    position: relative;
+    width: 1000px;
+    height: 900px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    left: 170px;
+    top: 125px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    overflow: auto;
+}
+
+.scroll1 {
+    touch-action: pan-y;
+}
+
+.scroll1:hover {
+    cursor: pointer;
+
+}
+.gambar {
+    position: absolute;
+    margin-right: 10px;
+    width: 1000px;
+    height: 450px;
+    left: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+    transform: translateX(20px);
+    pointer-events: none;
+    
+}
+
+.gambar:hover {
+    box-shadow:  0 0 8px 2px rgb(98, 180, 190);
+    transition: 0.3s ease-in;
+}
+
+.gambar.active {
+
+    left: 0;
+    opacity: 1;
+    transform: translateX(0); 
+    pointer-events: auto;
+}
+
+.gambar.prev {
+    left: -100%;
+    opacity: 0;
+}
+
+
+
+.right {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    background-color: rgb(121, 121, 121);
+    right: 50px;
+    top: 200px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-out;
+}
+
+.left {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    background-color: rgb(121, 121, 121);
+    left: 25px;
+    top: 200px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-out;
+
+}
+
+.left:hover {
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0 0 12px 3px rgb(0, 183, 255);
+    transition: 0.3s ease-in;
+
+}
+
+.right:hover {
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0 0 12px 3px rgb(0, 183, 255);
+    transition: 0.3s ease-in;
+    
+}
+
+.scroll1:hover .right{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s ease-in;
+    
+    
+}
+.scroll1:hover .left{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s ease-in;
+    
+}
+
+
+
+.teks2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    top: 5px;
+    left: 20px;
+    transition: 0.2s ease-out;
+    transform: translateY(0);
+}
+
+.scroll1:hover .teks2 {
+    visibility: visible;
+    opacity: 1;
+    transform: translatex(10px);
+    transition: 0.2s ease-in;
+}
+
+.scroll1:hover .beli {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    transform: translateX(-10px);
+}
+
+.scroll1:hover .teks3 {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    transform: translateX(10px);
+}
+
+.beli {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(0, 80, 155);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    bottom: 100px;
+    right: 50px;
+    bottom: 45px;
+    width: 150px;
+    height: 48px;
+    font-size: 20px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+}
+
+.beli:hover {
+    background-color: aqua;
+    box-shadow: 0 0 12px 3px rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+}
+
+.teks3 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    top: 380px;
+    left: 50px;
+    transition: 0.2s ease-out;
+
+}
+
+.dots {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    margin: 5px;
+    left: 480px;
+    top: 450px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(189, 187, 187);
+
+}
+
+.dot.active {
+    background-color: cyan;
+    box-shadow: 0 0 12px 2px rgb(233, 233, 233);
+}
+
+.kotak1 {
+    position: relative;
+    background-color: rgb(75, 70, 70);
+    height: 3px;
+    border-radius: 10px;
+    bottom: 300px;
+    width: 999px;
+    left: 180px;
+}
+
+.container {
+    position: relative;
+    /* background-color: rgb(54, 54, 54); */
+    width: 999px;
+    height: 800px;
+    bottom: 200px;
+    left: 180px;
+    border-radius: 10px;
+}
+
+.teks4 {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    left: 40px;
+    font-weight: bold;
+    bottom: 820px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+.teks5 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    left: 100px;
+    bottom: 820px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.teks6 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    left: 200px;
+    bottom: 820px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.teks7 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    left: 350px;
+    bottom: 820px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.teks8 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    left: 450px;
+    bottom: 820px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.teks4::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 255, 255);
+
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+
+
+.teks4:hover::after {
+  width: 80%;
+  left: 50%;
+}
+
+.teks4.active::after {
+  width: 80%;
+  left: 50%;
+}
+
+
+
+.teks5::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 255, 255);
+
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+
+
+.teks5:hover::after {
+  width: 90%;
+  left: 50%;
+}
+
+.teks5.active::after {
+  width: 90%;
+  left: 50%;
+}
+
+
+
+
+
+.teks6::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 255, 255);
+
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+
+
+.teks6:hover::after {
+  width: 95%;
+  left: 50%;
+}
+
+.teks6.active::after {
+  width: 95%;
+  left: 50%;
+}
+
+
+
+.teks7::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 255, 255);
+
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+
+
+.teks7:hover::after {
+  width: 85%;
+  left: 50%;
+}
+
+.teks7.active::after {
+  width: 85%;
+  left: 50%;
+}
+
+
+.teks8::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 255, 255);
+
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+
+
+.teks8:hover::after {
+  width: 85%;
+  left: 50%;
+}
+
+.teks8.active::after {
+  width: 85%;
+  left: 50%;
+}
+
+
+
+.isi {
+   
+    position: absolute;
+    left: 20px;
+    bottom: 645px;
+}
+
+.gambar5 {
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 12px 5px rgb(39, 38, 38); */
+    cursor: pointer;
+}
+
+.gambar5:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+}
+.gmbrisi {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    bottom: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+.gmbrisi:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+} 
+
+.gmbrisi:hover .teks9 {
+    color: white;
+}
+
+.gmbrisi:hover .teks10 {
+    color: white;
+}
+
+.gmbrisi:hover .teks11 {
+    color: white;
+}
+
+.gmbrisi:hover .harga {
+    color: white;
+} 
+
+.teks9 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.teks10 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+
+}
+
+.teks11 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+
+}
+
+.beli1 {
+    position: absolute;
+    background-color: rgb(0, 49, 185);
+    border: none;
+    font-size: 25px;
+    width: 130px;
+    height: 45px;
+    left: 800px;
+    top: 87px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 3px 10px 1px rgb(39, 38, 38);
+    transition: 0.2s ease-in;
+    
+}
+
+.beli1:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease-out;
+}
+
+.harga {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    left: 820px;
+    top: 30px;
+    transition: 0.2 ease-in;
+}
+
+.gambar6 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 200px;
+    left: 3px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 12px 4px rgb(39, 39, 39); */
+    cursor: pointer;
+}
+
+.gambar6:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+}
+
+.gmbrisi2 {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+.gmbrisi2:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.teks12 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.teks13 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+}
+
+.teks14 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+}
+
+.beli2 {
+    position: absolute;
+    background-color: rgb(0, 49, 185);
+    border: none;
+    font-size: 25px;
+    width: 130px;
+    height: 45px;
+    left: 800px;
+    top: 290px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 3px 10px 1px rgb(39, 38, 38);
+    transition: 0.2s ease-in;
+
+}
+
+.gmbrisi2:hover .teks12 {
+    color: white;
+}
+
+.gmbrisi2:hover .teks13 {
+    color: white;
+}
+
+.gmbrisi2:hover .teks14 {
+    color: white;
+}
+
+.beli2:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease-out;
+}
+
+.harga2 {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    left: 820px;
+    top: 240px;
+    transition: 0.2 ease-in;
+}
+
+.gmbrisi2:hover .harga2 {
+    color: white;
+}
+
+.gambar7 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 400px;
+    left: 3px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 12px 4px rgb(39, 39, 39); */
+    cursor: pointer;
+}
+
+.gambar7:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+
+}
+
+.gmbrisi3 {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+.gmbrisi3:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.teks15 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.teks16 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+}
+
+.teks17 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+}
+
+.beli3 {
+    position: absolute;
+    background-color: rgb(0, 49, 185);
+    border: none;
+    font-size: 25px;
+    width: 130px;
+    height: 45px;
+    left: 800px;
+    top: 490px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 3px 10px 1px rgb(39, 38, 38);
+    transition: 0.2s ease-in;
+
+}
+.gmbrisi3:hover .teks15 {
+    color: white;
+}
+
+.gmbrisi3:hover .teks16 {
+    color: white;
+}
+
+.gmbrisi3:hover .teks17 {
+    color: white;
+}
+
+.beli3:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease-out;
+}
+.gmbrisi3:hover .harga3 {
+    color: white;
+}
+
+.harga3 {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    left: 820px;
+    top: 440px;
+    transition: 0.2 ease-in;
+}
+
+.gambar8 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 600px;
+    left: 3px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 12px 4px rgb(39, 39, 39); */
+    cursor: pointer;
+}
+
+.gambar8:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+
+}
+
+.gmbrisi4 {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+.gmbrisi4:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.teks18 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.teks19 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+}
+
+.teks20 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+}
+
+.beli4 {
+    position: absolute;
+    background-color: rgb(0, 49, 185);
+    border: none;
+    font-size: 25px;
+    width: 130px;
+    height: 45px;
+    left: 800px;
+    top: 690px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 3px 10px 1px rgb(39, 38, 38);
+    transition: 0.2s ease-in;
+
+}
+.gmbrisi4:hover .harga4 {
+    color: white;
+}
+
+.gmbrisi4:hover .teks18 {
+    color: white;
+}
+
+.gmbrisi4:hover .teks19 {
+    color: white;
+}
+
+.gmbrisi4:hover .teks20 {
+    color: white;
+}
+
+.beli4:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease-out;
+}
+
+
+.harga4 {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    left: 840px;
+    top: 640px;
+    transition: 0.2 ease-in;
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    width: 155px;
+    left: 0.1px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+    transition: 0.2s ease-in;
+    padding: 10px;
+
+}
+
+
+.btn:hover {
+    background-color: rgb(179, 224, 224);
+    transition: 0.2s ease-out;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.k {
+    position: relative;
+    background: none;
+    border: none;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+.b {
+    position: relative;
+    background: none;
+    border: none;
+    right: 10px;
+    cursor: pointer;
+}
+
+.c {
+    position: relative;
+    background: none;
+    border: none;
+    right: 50px;
+    cursor: pointer;
+
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    top: 100px;
+}
+
+.lam {
+    position: absolute;
+    border: none;
+    width: 90px;
+    height: 66px;
+    top: 100px;
+    left: 48px;
+    background: none;
+    cursor: pointer;
+}   
+
+#cari {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    right: 100px;
+    top: 140px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#apa {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 300px;
+}
+
+.aplikasi {
+    position: absolute;
+    background-color: rgb(44, 38, 38);
+    width: 550px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+    left: 30px;
+    top: 220px;
+}
+
+.aplikasi:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 139, 139);
+    transition: 0.3s ease-in;
+}
+
+.icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 12px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.teks21 {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+.sembunyi {
+    display: none;
+}
+
+
+.isi2 {
+    display: none;
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+.gmbr {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gmbr:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+.t {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+
+.txt {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.txt1 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+
+}
+
+.txt2 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+
+}
+
+
+.t:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.t:hover .txt {
+    color: white;
+}
+.t:hover .txt1 {
+    color: white;
+}
+.t:hover .txt2 {
+    color: white;
+}
+
+
+.isi3 {
+    display: none;
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+.gmbr1 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gmbr1:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+.t2 {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+
+.txt3 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.txt4 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+
+}
+
+.txt5 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+
+}
+
+
+.t2:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.t2:hover .txt3 {
+    color: white;
+}
+.t2:hover .txt4 {
+    color: white;
+}
+.t2:hover .txt5 {
+    color: white;
+}
+
+
+
+.isi4 {
+    display: none;
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+.gmbr2 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gmbr2:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+.t3 {
+    position: absolute;
+    background-color: rgb(202, 200, 200);
+    width: 770px;
+    height: 140px;
+    left: 180px;
+    top: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px rgb(39, 38, 38);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+
+.txt6 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+    top: 2px;
+}
+
+.txt7 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 20px;
+    top: 100px;
+
+}
+
+.txt8 {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    left: 130px;
+    top: 100px;
+
+}
+
+
+.t3:hover {
+    background-color: rgb(4, 61, 78);
+    transition: 0.3s ease-out;
+
+}
+
+.t3:hover .txt6 {
+    color: white;
+}
+.t3:hover .txt7 {
+    color: white;
+}
+.t3:hover .txt8 {
+    color: white;
+}
+
+
+.isi4 {
+    display: none;
+    position: absolute;
+    left: 20px;
+    bottom: 645px;
+}
+
+
+.btn1 {
+    display: none;
+    position: absolute;
+    border: none;
+    background-color: white;
+    width: 160px;
+    height: 250px;
+    border-radius: 10px;
+    top: 250px;
+    left: 50px;
+}
+
+.gmbr3 {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    border-radius: 10px;
+    top: 250px;
+    cursor: pointer;
+    left: 50px;
+}
+
+.judul1 {
+    display: none;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    top: 520px;
+    left: 50px;
+    overflow-wrap: break-word;
+    max-width: 200px;
+}
+
+.aneh {
+    position: absolute;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: rgb(0, 177, 168);
+    height: 35px;
+    font-size: 16px;
+    left: 170px;
+    top: 130px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.aneh1 {
+    position: absolute;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: rgb(0, 177, 168);
+    height: 35px;
+    font-size: 16px;
+    left: 290px;
+    top: 130px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#masukin {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
